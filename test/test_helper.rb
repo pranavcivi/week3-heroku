@@ -10,4 +10,8 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  it 'INTEGRATION TEST for valid book title' do
+    visit '/'
+    expect(page).to have_content('Title: Percy Jackson')
+  end
 end
